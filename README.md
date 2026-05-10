@@ -3,8 +3,7 @@
 Minimal MCP server exposing GitHub Actions workflow tools via the `gh` CLI.
 
 Provides 7 tools for listing, triggering, observing, cancelling, and rerunning
-workflow runs — everything an agent needs for the feedback loop described in
-[github_actions_remote_feedback_mechanism.md](github_actions_remote_feedback_mechanism.md).
+workflow runs — everything an agent needs for an Actions feedback loop.
 
 ## Tools
 
@@ -39,9 +38,9 @@ fastmcp dev main.py
 fastmcp run main.py
 ```
 
-### Claude Code integration
+### MCP client integration
 
-Add to your Claude Code MCP config:
+Add to your MCP client config:
 
 ```json
 {
@@ -52,12 +51,6 @@ Add to your Claude Code MCP config:
     }
   }
 }
-```
-
-Or via the CLI:
-
-```bash
-claude mcp add gh-mcp -- fastmcp run main.py
 ```
 
 ## Task Runner Commands
